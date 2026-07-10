@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mboy Laundry</title>
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    html {
+		scroll-behavior: smooth; 
+	}
+    .nav>li>a {
+		color: midnightblue;
+		font-size: 16px;
+		font-weight: bold;
+		transition: 0.3s;	
+	}
+	.nav > li > a:hover {
+        background-color: transparent ;
+        color: royalblue ; 
+        font-weight: bold;
+    }
+    .navbar-toggle {
+    	border: 1px solid midnightblue;
+	}
+	.navbar-toggle .icon-bar {
+    	background-color: midnightblue;
+	}
+    .jumbotron{
+		background-color: midnightblue; 
+		padding: 40px 0; 
+		margin-bottom: 30px;
+	}
+    .jumbotron h2{
+		color: white; 
+		font-weight: bold;
+	}
+	.text{
+		color: white; 
+		font-weight: bold;
+	}
+    .title { 
+		color: navy; 
+		font-size: 40px; 
+		margin-bottom: 10px;
+		text-align: center; 
+        font-weight: bold;
+	}
+    .line-blue { 
+		width: 50px; 
+		height: 3px; 
+		background-color: blue; 
+		margin: 0 auto 30px auto; 
+	}
+    .deskripsi {
+		max-width: 750px; 
+		margin: 0 auto 40px auto; 
+		color: dimgray;
+		line-height: 1.6;
+		font-size: 16px;
+    }
+   .card-layanan{
+		background: white;
+		padding: 25px;
+		border-radius: 8px;
+		border: 1px solid lightgray;
+		flex: 1;
+		text-align: left;
+		box-shadow: 0 4px 12px grey;
+        margin-bottom: 10px;
+		transition: translateY 0.3s;
+		
+	}
+	.card-layanan:hover{
+		border-color: blue;
+	}
+	.card-layanan h4{
+		color: midnightbue;
+		font-weight: bold;
+	}
+	.card-layanan h5{
+		color: blue;
+		font-weight: bold;
+	}
+	.card-layanan desc{
+		color: dimgray;
+		line-height: 1.6;
+		font-size: 14px;
+	}
+
+    .text-harga {
+		text-align: right;
+		font-weight: bold;
+		color: blue;
+	}
+	.text-harga-express {
+		text-align: right;
+		font-weight: bold;
+		color: crimson;
+	}
+    .text-harga-satuan {
+		text-align: right;
+		font-weight: bold;
+		color: orange;
+     }
+    .scrollbox-satuan {
+		max-height: 176px;
+		overflow-y: auto;
+	}
+    .rule{
+        background-color: midnightblue;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 5px; 
+        border-radius: 8px;
+        padding: 15px 20px;
+        letter-spacing: 0.5px;
+    }
+    .rule-desc{
+        color: black;
+        font-size: 16px;
+        line-height: 1.5;
+        padding: 15px ;
+        border-bottom: 1px solid lightblue;
+    }
+    .rule-danger{
+        color: maroon;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 1.5;
+        padding: 15px ; 
+    }
+    .footer-title {
+		color: white; 
+		font-weight: bold;
+		 font-size: 18px; 
+	}
+	.footer-desc {
+		line-height: 1.7;
+		color: lightsteelblue; 
+        list-style: none;
+        text-align: left;
+	}
+</style>
+<body>
+<nav class="navbar navbar-fixed-top" style="background-color: white;">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			<span class="sr-only">Toggle Nav</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand text-primary" href="#" style="font-size: 20px; color: midnightblue;"><strong>MBOY LAUNDRY</strong></a>
+		</div>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav navbar-right" >
+			<li class="active"><a href="index.html" >Beranda<span class="sr-only">(current)</span></a></li>
+			<li><a href="tentang_kami.html">Tentang Kami</a></li>
+			<li><a href="layanan.html">Layanan</a></li>
+			<li><a href="galeri.html">Galeri</a></li>
+			<li><a href="kontak.html">Kontak</a></li>
+			</ul>
+		</div>
+	</div>
+</nav><br><br>
+
+<section  class="jumbotron">
+    <div class="container text-center">
+        <h2>Layanan Kami</h2>
+		<p class="text">Solusi perawatan pakaian profesional, higienis, dan terpercaya untuk mendukung aktivitas harian Anda.</p>
+        <div class="alert alert-danger">
+            <marquee><span class="glyphicon glyphicon-gift"></span>
+            <strong> Kumpulkan Stempel Loyality Card :</strong> Cuci 10x Langsung Gratis 1 Liter Minyak Goreng! Minta kartumu di kasir sekarang!</marquee>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2 class="title">Pilihan Layanan Mboy Laundry</h2>
+            <div class="line-blue"></div>
+        </div>
+    </div>
+
+    <div class="row" id="reguler" style="margin-bottom: 50px;">
+        <div class="col-md-12">
+            <div class="card-layanan" style="border-left: blue 4px solid; ">
+                <h5>Cucian Harian</h5>
+                <h4>Kiloan Reguler</h4>
+                <p class="card-layanan-desc">Solusi super hemat untuk pakaian sehari-hari. Cuci, kering, setrika rapi.</p>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-hover">
+                        <tr style="background-color: midnightblue; color: white;">
+                            <th colspan="2">Kiloan Reguler</th>
+                        </tr>
+                        <tr>
+                            <td>Cuci Basah</td>
+                            <td class="text-harga">Rp 10.000</td>
+                        </tr>
+                        <tr>
+                            <td>Cuci + Kering</td>
+                            <td class="text-harga">Rp 15.000</td>
+                        </tr>
+                        <tr>
+                            <td>Cuci + Kering + Lipat</td>
+                            <td class="text-harga">Rp 22.000</td>
+                        </tr>
+                        <tr>
+                            <td>Cuci + Kering + Lipat + Setrika</td>
+                            <td class="text-harga">Rp 35.000</td>
+                        </tr>
+                        <tr>
+                            <td>Setrika Saja ( Per Kg )</td>
+                            <td class="text-harga">Rp 4.000</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+
+    <div class="row" id="express" style="margin-bottom: 50px;">
+        <div class="col-md-12">
+            <div class="card-layanan" style="border-left: red 4px solid;">
+                <h5>Super Cepat</h5>
+                <h4>Kiloan Express</h4>
+                <p class="card-layanan-desc">Butuh pakaian siap pakai dalam waktu singkat? Beres dalam hitungan jam.</p>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-hover">
+                        <tr style="background-color: red;color: white;">
+                            <th colspan="2">Kiloan Express</th>
+                        </tr>
+                        <tr>
+                            <td>Express Kilat<br>
+                            <span>Estimasi : 6 Jam</span>
+                        </td>
+                        <td class="text-harga-express">Rp 8.000 / Kg</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" id="premium" style="margin-bottom: 50px;">
+        <div class="col-md-12">
+            <div class="card-layanan" style="border-left: yellow 4px solid;">
+                <h5>Perawatan Khusus</h5>
+                <h4>Satuan Premium</h4>
+                <p class="card-layanan-desc">Penanganan khusus untuk bedcover, jas, gorden, dan lainnya.</p>
+                <div class="table-responsive scrollbox-satuan">
+                <table class="table table-bordered table-hover">
+                    <tr style="background-color: gold;color: white;">
+                        <th>Item Satuan Premium</th>
+                        <th style="text-align: right;">Rentang Harga</th>
+                    </tr>
+                    <tr>
+                        <td>Bed Cover ( Kecil - Besar )</td>
+                        <td class="text-harga-satuan">Rp 10.000 - Rp 23.000</td>
+                    </tr>
+                    <tr>
+                        <td>Selimut ( Kecil - Besar )</td>
+                        <td class="text-harga-satuan">Rp 7.000 - Rp 10.000</td>
+                    </tr>
+                    <tr>
+                        <td>Sprei 1 Set ( Kecil - Besar )</td>
+                        <td class="text-harga-satuan">Rp 12.000 - Rp 17.000</td>
+                    </tr>
+                    <tr>
+                        <td>Handuk ( Kecil - Besar )</td>
+                        <td class="text-harga-satuan">Rp 10.000 - Rp 15.000</td>
+                    </tr>
+                    <tr>
+                        <td>Bath Rob ( Baju Handuk )</td>
+                        <td class="text-harga-satuan">Rp 30.000</td>
+                    </tr>
+                    <tr>
+                        <td>Jas / Jaket / Setelan Jas</td>
+                        <td class="text-harga-satuan">Rp 20.000 - Rp 25.000</td>
+                    </tr>
+                    <tr>
+                        <td>Gaun / Dress / Jump Suit</td>
+                        <td class="text-harga-satuan">Rp 25.000 - Rp 42.000</td>
+                    </tr>
+                    <tr>
+                        <td>Kemeja / T-Shirt / Sweater</td>
+                        <td class="text-harga-satuan">Rp 15.000 - Rp 25.000</td>
+                    </tr>
+                    <tr>
+                        <td>Celana / Jeans / Rok</td>
+                        <td class="text-harga-satuan">Rp 18.000 - Rp 20.000</td>
+                    </tr>
+                    <tr>
+                        <td>Ladies Set / Piyama / Kebaya</td>
+                        <td class="text-harga-satuan">Rp 20.000 - Rp 30.000</td>
+                    </tr>
+                    <tr>
+                        <td>Mukenah / Sajadah</td>
+                        <td class="text-harga-satuan">Rp 18.000 - Rp 20.000</td>
+                    </tr>
+                    <tr>
+                        <td>Gorden</td>
+                        <td class="text-harga-satuan">Rp 50.000</td>
+                    </tr>
+                    <tr>
+                        <td>Taplak Meja</td>
+                        <td class="text-harga-satuan">Rp 15.000</td>
+                    </tr>
+                    <tr>
+                        <td>Aksesoris (Topi/Dasi/Selendang)</td>
+                        <td class="text-harga-satuan">Rp 10.000 - Rp 20.000</td>
+                    </tr>
+                </table>
+            </div>
+            </div>
+        </div>
+    </div>
+</div> 
+
+<div class="container">
+    <div  class="alert">
+        <h2 class="rule"><span class="glyphicon glyphicon-exclamation-sign"></span> PERHATIAN! SYARAT & KETENTUAN</h2>
+    </div>
+    <div class="alert alert-info" style="border: 1px solid lightblue; margin: 0;">
+        <ul style="list-style: none;">
+            <li class="rule-desc"><span class="glyphicon glyphicon-file"></span>
+                pengambilan barang harap disertai nota. 
+            </li>
+            <li class="rule-desc"><span class="glyphicon glyphicon-calendar"></span>
+                barang yang tidak diambil selama 1 minggu, jika hilang/rusak bukan menjadi tanggung jawab kami.
+            </li>
+            <li class="rule-desc"><span class="glyphicon glyphicon-piggy-bank"></span>
+                barang hilang/rusak karena proses pengerjaan diganti maksimal 2x biaya.
+            </li>
+            <li class="rule-desc"><span class="glyphicon glyphicon-adjust"></span>
+                pakaian luntur di luar tanggung jawab laundry.
+            </li>
+            <li class="rule-desc"><span class="glyphicon glyphicon-time"></span>
+                komplain maksimal 24 jam dari waktu pengambilan
+            </li><br>
+            <div class="alert alert-danger" style="border-left: 4px solid red;">
+            <li class="rule-danger"><span class="glyphicon glyphicon-warning-sign"></span>
+                Setiap Konsumen Dianggap Setuju dengan Syarat Diatas
+            </li>
+            </div>
+        </ul>
+    </div>
+</div><br>
+
+
+<footer style="background-color: midnightblue; padding: 40px">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<div style="background: rgba(255, 255, 255, 0.05); padding: 20px; border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.1);">
+
+				<h5 class="footer-title">Mboy Laundry</h5>
+				<p class="footer-desc">Menghadirkan pelayanan terbaik untuk perawatan pakaian Anda. Cukup datang membawa kain kotor, kami bereskan dengan proses yang higienis, wangi premium, dan selesai tepat waktu.</p>
+				</div>
+			</div>
+			
+			<div class="col-md-4">
+				 <div style="background: rgba(255, 255, 255, 0.05); padding: 20px; border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.1);">
+
+				<h5 class="footer-title">Informasi</h5>
+				
+				<ul style="list-style: none;text-align: left;padding-left: 0;">
+					<li><a href="index.html" class="footer-desc">Beranda</a></li>
+					<li><a href="tentang_kami.html"  class="footer-desc">Tentang Kami</a></li>
+					<li><a href="layanan.html"  class="footer-desc">Layanan</a></li>
+					<li><a href="galeri.html"  class="footer-desc">Galeri</a></li>
+					<li><a href="kontak.html"  class="footer-desc">Kontak</a></li>
+				</ul>
+				</div>
+			</div>
+
+			<div class="col-md-4">
+		    <div style="background: rgba(255, 255, 255, 0.05); padding: 20px; border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.1);">
+
+				<h5 class="footer-title">Layanan Kami</h5>
+				<ul style="list-style: none;text-align: left;padding-left: 0;">
+					<li class="footer-desc"><span class="glyphicon glyphicon-refresh"></span> Kiloan Reguler</li>
+					<li class="footer-desc"><span class="glyphicon glyphicon-flash"></span> Kiloan Express</li>
+					<li class="footer-desc"><span class="glyphicon glyphicon-heart"></span> Satuan Premium</li>
+
+				</ul>
+				</div>
+			</div>
+			
+            <div class="col-md-12 text-center" style="border-top: 1px solid rgba(255, 255, 255, 0.15); margin-top: 20px; padding-top: 25px;">
+                <p class="footer-desc">
+					<a href="https://drive.google.com/drive/folders/1rpcuofX5QO0gu8_TGJX7Ph8pRyQ98XlG?usp=drive_link" target="_blank" style="color: white; text-decoration: none;">
+					<span class="glyphicon glyphicon-file"></span> Sistem Dokumentasi & Developer Log</a>
+				</p>
+                <p class="footer-desc" >© 2026 Mboy Laundry. Designed by Novi Ardana.</p>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<script src="bootstrap/js/jQuery.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>	

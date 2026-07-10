@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mboy Laundry</title>
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<style>
+	html {
+		scroll-behavior: smooth; 
+	}
+	.nav>li>a {
+		color: royalblue;
+		font-size: 16px;
+		font-weight: bold;
+		transition: 0.3s;	
+	}
+	.nav > li > a:hover {
+        background-color: transparent ;
+        color: midnightblue ; 
+        font-weight: bold;
+    }
+	.navbar-toggle {
+    	border: 1px solid midnightblue;
+	}
+	.navbar-toggle .icon-bar {
+    	background-color: midnightblue;
+	}
+	.title { 
+		color: navy; 
+		font-size: 28px; 
+		margin-bottom: 10px;
+		text-align: center; 
+		font-weight: bold;
+	}
+	.step{
+		background-color: midnightblue;
+		width: auto;
+		padding: 10px;
+	}
+	.step-title{
+		color: white;
+		font-size: 28px; 
+		margin-bottom: 10px;
+		text-align: center; 
+		font-weight: bold;
+	}
+	.line-blue { 
+		width: 50px; 
+		height: 3px; 
+		background-color: blue; 
+		margin: 0 auto 30px auto; 
+	}
+
+	.jumbotron h1{
+		color:midnightblue;
+		font-weight:bold ;
+		font-size:40px ;
+		margin-bottom: 20px;
+	}
+	.tentang_text{
+		text-align: justify;
+		line-height: 1.8;
+		font-size: 16px;
+	}
+	.step-sub{
+		color: white;
+		text-align: center;
+	}
+	.step-number{
+		color: gold;
+		text-align: center;
+		font-weight: bold;
+	}
+	.deskripsi-step{
+		color: whitesmoke;
+		text-align: center;
+	}
+	.card-layanan{
+		background: white;
+		padding: 25px;
+		border-radius: 8px;
+		border: 1px solid lightgray;
+		flex: 1;
+		text-align: left;
+		box-shadow: 0 4px 12px grey;
+        margin-bottom: 30px;
+		transition: translateY 0.3s;
+		
+	}
+	.card-layanan:hover{
+		border-color: blue;
+	}
+	.card-layanan h4{
+		color: midnightblue;
+		font-weight: bold;
+	}
+	.card-layanan h5{
+		color: blue;
+		font-weight: bold;
+	}
+	.card-layanan desc{
+		color: dimgray;
+		line-height: 1.6;
+		font-size: 14px;
+	}
+	.footer-title {
+		color: white; 
+		font-weight: bold;
+		 font-size: 18px; 
+	}
+	.footer-desc {
+		line-height: 1.7;
+		color: lightsteelblue; 
+	}
+	
+</style>
+<body>
+<nav class="navbar navbar-fixed-top" style="background-color: white;">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			<span class="sr-only">Toggle Nav</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand text-primary" href="#" style="font-size: 20px; color: midnightblue;"><strong>MBOY LAUNDRY</strong></a>
+		</div>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav navbar-right" >
+			<li class="active"><a href="index.html" >Beranda<span class="sr-only">(current)</span></a></li>
+			<li><a href="tentang_kami.html">Tentang Kami</a></li>
+			<li><a href="layanan.html">Layanan</a></li>
+			<li><a href="galeri.html">Galeri</a></li>
+			<li><a href="kontak.html">Kontak</a></li>
+			</ul>
+		</div>
+	</div>
+</nav><br><br>
+
+<section id ="beranda" class="jumbotron" style="background-color: lightsteelblue;">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<span class="badge" style="background-color: blue;">WALK-IN LAUNDRY SERVICES</span>
+				<h1 >Baju Kotor Numpuk? <br>
+					<span style="color: blue;">MBOY LAUNDRY Solusinya!</span></h1>
+				<p class="text-justify"> Nikmati kemudahan layanan laundry tanpa repot. Kami memastikan setiap potong pakaian Anda diproses secara higienis, disetrika dengan rapi, serta diberikan keharuman premium yang tahan lama. Tepat waktu dan bebas khawatir.</p>
+			    <div>
+					<a href="https://wa.me/6282162923390" class="btn" style="background-color: green; color: white;"  border-radius: 5px;><i class="fab fa-whatsapp"></i> Hubungi Kami</a>
+				</div>
+			</div>
+			<div class="col-md-6">	
+				<img src="images/tempat.jpeg" class="img-thumbnail img-responsive" alt="Toko Mboy LAUNDRY" >	
+			</div>
+		
+		</div>
+	</div> 
+</section><br>
+
+<section id="preview-tentang" style="padding: 60px 0;">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h2 style="color: midnightblue; font-weight: bold;">Kenapa Mboy Laundry?</h2>
+                <p class="tentang_text">
+                    Terinspirasi dari nilai kepedulian seorang Ibu, Mboy Laundry berkomitmen memberikan perawatan pakaian dengan standar higienis tertinggi. Kami bukan sekadar mencuci, kami merawat pakaian Anda dengan ketelitian personal.
+                </p>
+
+				<a href="tentang_kami.html" class="btn" style="background-color: midnightblue; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Baca Selengkapnya</a>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="images/mesin_cuci.png" class="img-fluid rounded shadow" style="max-width: 80%;">
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container step">
+	<div class="row">
+		<div class="col-md-12">
+			<h1 class="step-title">Mudahnya laundry di Mboy Laundry</h1>
+			<p class="deskripsi-step">Alur pelayanan praktis saat Anda datang ke outlet walk-in kami.</p>
+		</div>
+	</div><br>
+
+	<div class="row">
+		<div class="col-md-3">
+			<h3 class="step-number">O1</h3>
+			<h4 class="step-sub">Datang dan drop-off</h4>
+				<p class="deskripsi-step">Bawa baju kotor Anda, langsung ke outlet kami. </p>
+		</div>
+		<div class="col-md-3">
+			<h3 class="step-number">O2</h3>
+			<h4 class="step-sub">Timbang & Pilih</h4>
+				<p class="deskripsi-step">Kami akan menimbang atau menghitung cucian Anda di depan Anda. </p>
+		</div>
+		<div class="col-md-3">
+			<h3 class="step-number">O3</h3>
+			<h4 class="step-sub">Proses Profesional</h4>
+				<p class="deskripsi-step">Baju Anda diproses secara higienis menggunakan detergen ramah serat kain. </p>
+		</div>
+		<div class="col-md-3">
+			<h3 class="step-number">O4</h3>
+			<h4 class="step-sub">Selesai dan Ambil</h4>
+				<p class="deskripsi-step">Silakan ambil cucian Anda yang sudah rapi & wangi. </p>
+		</div>
+	</div>
+</div><br><br>
+
+<div class="container">
+	<div class="row">
+		<h1 class="title">Layanan Kami</h1>
+		<div class="line-blue"></div>
+			<div class="col-md-4">
+				<div class="card-layanan ">
+					<h5>Cucian Harian</h5>
+					<h4>Kiloan Reguler</h4>
+					<p class="card-layanan-desc">Solusi super hemat untuk pakaian sehari-hari. Cuci, kering, setrika rapi.</p>
+					<a href="layanan.html#reguler" class="btn btn-primary btn-sm" style="width: 100%; border-radius: 6px;">Lihat Detail Harga</a>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card-layanan">
+					<h5>Super Cepat</h5>
+					<h4>Kiloan Express</h4>
+					<p class="card-layanan-desc">Butuh pakaian siap pakai dalam waktu singkat? Beres dalam hitungan jam.</p>
+					<a href="layanan.html#express" class="btn btn-danger btn-sm" style="width: 100%; border-radius: 6px;">Lihat Detail Harga</a>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card-layanan">
+					<h5>Perawatan Khusus</h5>
+					<h4>Satuan Premium</h4>
+					<p class="card-layanan-desc">Penanganan khusus untuk bedcover, jas, gorden, dan lainnya.</p>
+					<a href="layanan.html#premium" class="btn btn-warning btn-sm" style="width: 100%; border-radius: 6px;">Lihat Detail Harga</a>
+				</div>
+			</div>	
+	</div>
+</div><br><br>
+
+<footer style="background-color: midnightblue; padding: 40px">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<div style="background: rgba(255, 255, 255, 0.05); padding: 20px; border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.1);">
+
+				<h5 class="footer-title">Mboy Laundry</h5>
+				<p class="footer-desc">Menghadirkan pelayanan terbaik untuk perawatan pakaian Anda. Cukup datang membawa kain kotor, kami bereskan dengan proses yang higienis, wangi premium, dan selesai tepat waktu.</p>
+				</div>
+			</div>
+			
+			<div class="col-md-4">
+				 <div style="background: rgba(255, 255, 255, 0.05); padding: 20px; border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.1);">
+
+				<h5 class="footer-title">Informasi</h5>
+				
+				<ul style="list-style: none;text-align: left;padding-left: 0;">
+					<li><a href="index.html" class="footer-desc">Beranda</a></li>
+					<li><a href="tentang_kami.html"  class="footer-desc">Tentang Kami</a></li>
+					<li><a href="layanan.html"  class="footer-desc">Layanan</a></li>
+					<li><a href="galeri.html"  class="footer-desc">Galeri</a></li>
+					<li><a href="kontak.html"  class="footer-desc">Kontak</a></li>
+				</ul>
+				</div>
+			</div>
+
+			<div class="col-md-4">
+		    <div style="background: rgba(255, 255, 255, 0.05); padding: 20px; border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.1);">
+
+				<h5 class="footer-title">Layanan Kami</h5>
+				<ul style="list-style: none;text-align: left;padding-left: 0;">
+					<li class="footer-desc"><span class="glyphicon glyphicon-refresh"></span> Kiloan Reguler</li>
+					<li class="footer-desc"><span class="glyphicon glyphicon-flash"></span> Kiloan Express</li>
+					<li class="footer-desc"><span class="glyphicon glyphicon-heart"></span> Satuan Premium</li>
+
+				</ul>
+				</div>
+			</div>
+			
+            <div class="col-md-12 text-center" style="border-top: 1px solid rgba(255, 255, 255, 0.15); margin-top: 20px; padding-top: 25px;">
+				<p class="footer-desc">
+					<a href="https://drive.google.com/drive/folders/1rpcuofX5QO0gu8_TGJX7Ph8pRyQ98XlG?usp=drive_link" target="_blank" style="color: white; text-decoration: none;">
+					<span class="glyphicon glyphicon-file"></span> Sistem Dokumentasi & Developer Log</a>
+				</p>
+				<p class="footer-desc" >© 2026 Mboy Laundry. Designed by Novi Ardana.</p>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+<script src="bootstrap/js/jQuery.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

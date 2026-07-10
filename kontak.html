@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mboy Laundry</title>
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+	html {
+		scroll-behavior: smooth; 
+	}
+    .nav>li>a {
+		color: midnightblue;
+		font-size: 16px;
+		font-weight: bold;
+		transition: 0.3s;	
+	}
+	.nav > li > a:hover {
+        background-color: transparent ;
+        color: royalblue ; 
+        font-weight: bold;
+    }
+	.navbar-toggle {
+    	border: 1px solid midnightblue;
+	}
+	.navbar-toggle .icon-bar {
+    	background-color: midnightblue;
+	}
+	
+	.jumbotron{
+		background-color: midnightblue; 
+		padding: 40px 0; 
+		margin-bottom: 30px;
+	}
+	.jumbotron h2{
+		color: white; 
+		font-weight: bold;
+	}
+	.text{
+		color: white; 
+		font-weight: bold;
+	}	
+     .title { 
+		color: navy; 
+		font-size: 40px; 
+		margin-bottom: 10px;
+		text-align: center; 
+        font-weight: bold;
+	}
+    .line-blue { 
+		width: 50px; 
+		height: 3px; 
+		background-color: blue; 
+		margin: 0 auto 30px auto; 
+	}
+	.head_title{
+		 background-color: midnightblue; 
+		 color: white; 
+		 padding-left: 20px;
+	}
+   .map-placeholder iframe{
+		width: 100%;
+		height: 200px;
+		border-radius:6px ;
+		display: block;
+	}
+    .footer-title {
+		color: white; 
+		font-weight: bold;
+		 font-size: 18px; 
+	}
+	.footer-desc {
+		line-height: 1.7;
+		color: lightsteelblue; 
+	}
+
+</style>
+<body>
+<nav class="navbar navbar-fixed-top" style="background-color: white;">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			<span class="sr-only">Toggle Nav</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand text-primary" href="#" style="font-size: 20px; color: midnightblue;"><strong>MBOY LAUNDRY</strong></a>
+		</div>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav navbar-right" >
+			<li class="active"><a href="index.html" >Beranda<span class="sr-only">(current)</span></a></li>
+			<li><a href="tentang_kami.html">Tentang Kami</a></li>
+			<li><a href="layanan.html">Layanan</a></li>
+			<li><a href="galeri.html">Galeri</a></li>
+			<li><a href="kontak.html">Kontak</a></li>
+			</ul>
+		</div>
+	</div>
+</nav><br><br>
+
+<section  class="jumbotron">
+    <div class="container text-center">
+        <h2>Hubungi Kami</h2>
+		<p class="text">Bukti nyata komitmen kami merawat pakaian Anda dengan bersih dan higienis</p>
+    </div>
+</section>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<h3 class="title">Kami Siap Membantu Anda</h3>
+			<div class="line-blue"></div>
+			<p class="text-center">Ada pertanyaan seputar layanan kami? Hubungi admin melalui kontak di bawah ini.</p>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-6" >
+			<div class="panel panel-default head_title" >
+				<h3 class="head_title">Hubungi Kami</h3>
+			</div>	
+				
+
+			<div class="panel-body">
+				<p><span class="glyphicon glyphicon-time" style="color: midnightblue;"></span> 
+					<strong> Jam Operasional:</strong><br> 
+				</p>
+				<p style="padding-left: 20px;">Senin - Sabtu : 08.00 - 18.00 WIB</p>
+				<p><span class="glyphicon glyphicon-phone" style="color: midnightblue;"></span> 
+					<strong> WhatsApp:</strong> 
+				</p>
+				<p style="padding-left: 20px;">+62 821-6297-3390</p>
+				<p><span class="glyphicon glyphicon-envelope" style="color: midnightblue;"></span> 
+					<strong> Email:</strong> 
+				</p>
+				<p style="padding-left: 20px;">annisasaputeri@gmail.com</p>
+			<div>
+				<a href="https://wa.me/6282162923390" class="btn" style="background-color: green; color: white;"  border-radius: 5px;><i class="fab fa-whatsapp"></i> Chat Admin Sekarang</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="col-md-6">
+			<div class="panel panel-default head_title" >
+				<h3>Lokasi Kami</h3>
+			</div>	
+				<p class="map-placeholder"><span class="glyphicon glyphicon-map-marker"><strong> Jln. Ulayat Raya No.67, Klambir V, Sumatera Utara</strong></span><br><br>
+            	<iframe src="https://www.google.com/maps/embed?pb=!4v1783272465182!6m8!1m7!1s7Ioz0XZgok__IvEylllBNg!2m2!1d3.624173138784047!2d98.59372625418189!3f86.21556!4f0!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+				</p>
+		</div>
+	</div>
+</div>
+
+<footer style="background-color: midnightblue; padding: 40px">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<div style="background: rgba(255, 255, 255, 0.05); padding: 20px; border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.1);">
+					<h5 class="footer-title">Mboy Laundry</h5>
+					<p class="footer-desc">Menghadirkan pelayanan terbaik untuk perawatan pakaian Anda. Cukup datang membawa kain kotor, kami bereskan dengan proses yang higienis, wangi premium, dan selesai tepat waktu.</p>
+				</div>
+			</div>
+			
+			<div class="col-md-4">
+				<div style="background: rgba(255, 255, 255, 0.05); padding: 20px; border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.1);">
+				<h5 class="footer-title">Informasi</h5>
+				
+				<ul style="list-style: none;text-align: left;padding-left: 0;">
+					<li><a href="index.html" class="footer-desc">Beranda</a></li>
+					<li><a href="tentang_kami.html"  class="footer-desc">Tentang Kami</a></li>
+					<li><a href="layanan.html"  class="footer-desc">Layanan</a></li>
+					<li><a href="galeri.html"  class="footer-desc">Galeri</a></li>
+					<li><a href="kontak.html"  class="footer-desc">Kontak</a></li>
+				</ul>
+				</div>
+			</div>
+
+			<div class="col-md-4">
+		    <div style="background: rgba(255, 255, 255, 0.05); padding: 20px; border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.1);">
+
+				<h5 class="footer-title">Layanan Kami</h5>
+				<ul style="list-style: none;text-align: left;padding-left: 0;">
+					<li class="footer-desc"><span class="glyphicon glyphicon-refresh"></span> Kiloan Reguler</li>
+					<li class="footer-desc"><span class="glyphicon glyphicon-flash"></span> Kiloan Express</li>
+					<li class="footer-desc"><span class="glyphicon glyphicon-heart"></span> Satuan Premium</li>
+
+				</ul>
+				</div>
+			</div>
+			
+            <div class="col-md-12 text-center" style="border-top: 1px solid rgba(255, 255, 255, 0.15); margin-top: 20px; padding-top: 25px;">
+				<p class="footer-desc">
+					<a href="https://drive.google.com/drive/folders/1rpcuofX5QO0gu8_TGJX7Ph8pRyQ98XlG?usp=drive_link" target="_blank" style="color: white; text-decoration: none;">
+					<span class="glyphicon glyphicon-file"></span> Sistem Dokumentasi & Developer Log</a>
+				</p>
+				<p class="footer-desc" >© 2026 Mboy Laundry. Designed by Novi Ardana.</p>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<script src="bootstrap/js/jQuery.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
